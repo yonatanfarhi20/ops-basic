@@ -20,3 +20,9 @@ services:
     volumes:
       - ./mysql-data:/var/lib/mysql
     privileged: true
+  frontend:
+    image: yonatanfarhi20/frontend:latest
+    ports:
+      - "4200:80"
+    depends_on:
+      - appserver 
