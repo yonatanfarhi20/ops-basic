@@ -83,7 +83,7 @@ public class StudentsController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> getOneStudent(@PathVariable Long id)
+    public ResponseEntity<?> getOneStudent1(@PathVariable Long id)
     {
         return new ResponseEntity<>(studentService.findById(id), HttpStatus.OK);
     }
